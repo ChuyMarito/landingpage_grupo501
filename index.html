@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2e5b">
+  <meta name="description" content="Equipo 05 TEC NOVA Sinaloa: aprende a crear y publicar tu primera página web con GitHub Pages.">
+  <title>TEC NOVA Sinaloa | Equipo 05</title>
+  <link rel="icon" type="image/png" href="assets/logo-vertical.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="launch-scene" aria-hidden="true">
+    <span class="rocket rocket-one"><i></i><b></b></span>
+    <span class="rocket rocket-two"><i></i><b></b></span>
+    <span class="rocket rocket-three"><i></i><b></b></span>
+    <span class="rocket rocket-four"><i></i><b></b></span>
+    <span class="shooting-star"></span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="TEC NOVA, inicio"><img src="assets/logo-horizontal.png" alt="TEC NOVA"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#proyecto">El proyecto</a><a href="#aprende">Aprende</a><a href="#publicar">Publica tu sitio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> EQUIPO 05 · SINALOA</div>
+        <h1>Ideas que<br><span>despegan.</span></h1>
+        <p class="hero-lead">Somos <strong>TEC NOVA</strong>. Exploramos la tecnología, aprendemos creando y llevamos nuestras ideas más allá de la pantalla.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#aprende">Comenzar misión <span>↗</span></a>
+          <button class="btn btn-outline" id="launchSound" type="button"><span class="sound-icon">♫</span> Escuchar despegue</button>
+        </div>
+        <p class="sound-note" id="soundStatus" aria-live="polite">Activa el sonido cuando estés listo para el despegue.</p>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="planet"></div>
+        <img class="hero-logo" src="assets/logo-vertical.png" alt="Emblema de TEC NOVA con un cohete dorado y azul">
+        <div class="float-tag tag-top">✦ CREATIVIDAD</div><div class="float-tag tag-bottom">TECNOLOGÍA · FUTURO</div>
+      </div>
+      <a class="scroll-cue" href="#proyecto"><span></span> DESLIZA PARA EXPLORAR</a>
+    </section>
+
+    <section class="intro section-wrap" id="proyecto">
+      <div class="section-kicker">01 / NUESTRA MISIÓN</div>
+      <div class="intro-grid">
+        <h2>El futuro no<br>se espera. <span>Se crea.</span></h2>
+        <div><p>En TEC NOVA creemos que cada gran proyecto comienza con curiosidad. Este espacio es nuestra base de lanzamiento: un lugar para compartir ideas, experimentar y aprender a publicar en la web.</p><p class="muted">Una página. Un equipo. Un universo de posibilidades.</p></div>
+      </div>
+      <div class="stats-row"><div><strong>05</strong><span>Equipo</span></div><div><strong>∞</strong><span>Ideas por explorar</span></div><div><strong>1</strong><span>Primera misión: publicar</span></div></div>
+    </section>
+
+    <section class="learning section-wrap" id="aprende">
+      <div class="section-kicker">02 / CENTRO DE APRENDIZAJE</div>
+      <div class="section-heading"><h2>Tu primera página<br><span>en órbita.</span></h2><p>No necesitas ser experto. Sigue estos pasos y convierte tus archivos en un sitio que cualquiera pueda visitar.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-num">01</div><div class="step-icon">▤</div><h3>Prepara tus archivos</h3><p>Crea una carpeta para tu proyecto. Agrega tu archivo <code>index.html</code>, tus estilos <code>styles.css</code> y las imágenes que vas a utilizar.</p><span class="step-label">TU PROYECTO</span></article>
+        <article class="step-card"><div class="step-num">02</div><div class="step-icon">⌘</div><h3>Crea un repositorio</h3><p>Entra a GitHub, inicia sesión y selecciona <strong>New repository</strong>. Ponle un nombre, por ejemplo <code>mi-primera-web</code>.</p><span class="step-label">GITHUB</span></article>
+        <article class="step-card"><div class="step-num">03</div><div class="step-icon">⇧</div><h3>Sube tu página</h3><p>Dentro del repositorio, usa <strong>Add file → Upload files</strong>. Arrastra los archivos y confirma con <strong>Commit changes</strong>.</p><span class="step-label">TUS ARCHIVOS</span></article>
+        <article class="step-card"><div class="step-num">04</div><div class="step-icon">◎</div><h3>Activa Pages</h3><p>Abre <strong>Settings → Pages</strong>. En Build and deployment elige <strong>Deploy from a branch</strong>, selecciona <code>main</code> y <code>/(root)</code>, y guarda.</p><span class="step-label">PUBLICACIÓN</span></article>
+        <article class="step-card featured-step"><div class="step-num">05</div><div class="step-icon">✦</div><h3>¡Tu sitio está en línea!</h3><p>Espera a que termine la publicación. GitHub Pages mostrará un enlace público para compartir tu página. Si haces cambios, súbelos al repositorio.</p><span class="step-label">MISIÓN COMPLETADA</span></article>
+      </div>
+      <div class="tip-box"><span class="tip-star">✦</span><div><strong>Consejo de la tripulación</strong><p>El archivo principal debe llamarse exactamente <code>index.html</code> y estar en la carpeta que seleccionaste para publicar.</p></div></div>
+    </section>
+
+    <section class="publish section-wrap" id="publicar">
+      <div class="publish-panel">
+        <div class="section-kicker">03 / LISTOS PARA EL LANZAMIENTO</div>
+        <div class="publish-content"><div><h2>Tu turno de<br><span>despegar.</span></h2><p>Abre GitHub y publica tu propio proyecto. Cada experimento te acerca a una nueva habilidad.</p><a class="btn btn-gold" href="https://github.com/new" target="_blank" rel="noopener noreferrer">Crear repositorio en GitHub ↗</a></div><div class="mini-rocket" aria-hidden="true">🚀</div></div>
+        <div class="publish-foot"><span>TEC NOVA · EQUIPO 05</span><span>HECHO PARA EXPLORAR EL FUTURO</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a href="#inicio">TEC NOVA <span>✦</span></a><p>Equipo 05 · Sinaloa</p><p>Aprender, crear y compartir.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
